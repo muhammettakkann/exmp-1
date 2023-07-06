@@ -1,7 +1,11 @@
 body{
     background-color: whitesmoke;
 }
-
+.bg-blur{
+    background-color: #842776;
+    background-image: linear-gradient(147deg, #150c14 0%, #1357bc 100%);
+    color: whitesmoke;
+}
 @media(min-width:1201px){
     .fa-home-lg{
         font-size: larger !important;
@@ -31,6 +35,13 @@ body{
             text-align:1.5px;
         }
     }
+    .overflow-hidden{
+        max-height: 33vh;
+        img{
+            height: 500px !important;
+            width: 700px !important;
+        }
+    }
 }
 .bg-lorem{
     background-color: #842776;
@@ -39,7 +50,7 @@ body{
 }
 .img-wrap{
     height: 270px;
-    padding: 10px;
+    padding-top: 3%;
     display: block;
     align-items: center;
     text-align: center;
@@ -49,3 +60,39 @@ body{
     width: auto;
     max-width: 100%;
 }
+
+
+.box:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #103783 0%, #9bafd9 100% );
+    transform: translate3d(1px, 2px, 0) scale(1.08);
+    filter: blur(7px);
+    opacity: var(1);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.box::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+        
+        
