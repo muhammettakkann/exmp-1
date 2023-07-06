@@ -1,3 +1,51 @@
 body{
-    background-color: aquamarine;
+    background-color: whitesmoke;
+}
+
+@media(min-width:1201px){
+    .fa-home-lg{
+        font-size: larger !important;
+    }
+    .nav-items{
+        font-size:19px;
+        font-weight: 500;
+
+    }
+    .nav-form{
+        input{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        button{
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+    .blog-shower{
+        button{
+            padding-top: 17px !important;
+            padding-bottom: 17px !important;
+            letter-spacing: 2px;
+            font-weight: 500;
+            letter-spacing:1.5px;
+            text-align:1.5px;
+        }
+    }
+}
+.bg-lorem{
+    background-color: #842776;
+    background-image: linear-gradient(147deg, #150c14 0%, #1357bc 100%);
+    color: whitesmoke;
+}
+.img-wrap{
+    height: 270px;
+    padding: 10px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.img-cover{
+    height: 100%;
+    width: auto;
+    max-width: 100%;
 }
