@@ -78,6 +78,7 @@ body{
     border-radius: inherit;
 }
 
+
 /* 
 * Prevents issues when the parent creates a 
 * stacking context. (For example, using the transform
@@ -94,5 +95,9 @@ body{
     background: inherit;
     border-radius: inherit;
 }
-        
-        
+
+.card-blog::before{
+    @extend .box:before; background: linear-gradient(-45deg, #102a47 0%, #cbcdd1 100% );
+    transform: translate3d(1px, 1px, 0) scale(1.03);
+    filter: blur(10px);
+}
