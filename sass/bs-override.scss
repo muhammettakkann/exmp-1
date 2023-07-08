@@ -1,11 +1,4 @@
-$info:cornflowerblue;
-.list-group-item{
-    text-align: center !important;
-    transition-duration: 7000ms ;
+.card{
+    cursor: pointer;
 }
 
-@media(min-width:1200px){
-    .list-group-item-action{
-        padding: 20px !important;
-    }
-}

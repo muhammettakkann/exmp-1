@@ -108,3 +108,25 @@ body{
 .blog-img-cover{
     @extend .img-cover;
 }
+.bgl-list-group{
+    button{
+        transition-duration: 500ms;
+    }
+    button:hover{
+        background-color: #102a47 !important;
+        color: whitesmoke;
+    }
+}
+.card-info-wrap{
+    border-left:darkgray 3px ridge;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.map{
+    width: 650px !important;
+    height: 75vh;
+
+}
+
+
+
