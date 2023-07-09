@@ -123,9 +123,13 @@ body{
     margin-bottom: 1%;
 }
 .map{
-    width: 650px !important;
+    width: 640px !important;
     height: 75vh;
-
+}
+form{
+    .col-md-6{
+        display: inline-block;
+    }
 }
 
 
